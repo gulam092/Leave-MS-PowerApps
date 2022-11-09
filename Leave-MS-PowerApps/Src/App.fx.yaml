@@ -1,0 +1,49 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =ClearCollect(
+            NavManagerView,
+            {
+                Title: "My Leave Request",
+                Targetscreen: 'My Leave Request'
+            },
+           
+            {
+                Title: "Company Holidays",
+                Targetscreen: 'Company Holidays'
+            },
+            {
+                Title: "About",
+                Targetscreen: About
+            },
+            {
+                Title: "LogOut",
+                Targetscreen: Home
+            }
+        );
+        
+        
+        ClearCollect(
+            NavEmployeeView,
+            {
+                Title: "My Leave Request",
+                Targetscreen: 'My Leave Request'
+            },
+            {
+                Title: "My Leave Balance",
+                Targetscreen: 'My Leave Balance'
+            },
+            {
+                Title: "Company Holidays",
+                Targetscreen: 'Company Holidays'
+            },
+            {
+                Title: "About",
+                Targetscreen: About
+            },
+            {
+                Title: "LogOut",
+                Targetscreen: Home
+            }
+        )
+

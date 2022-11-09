@@ -1,0 +1,72 @@
+Header As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =Max(App.Height, App.MinScreenHeight)/8
+    Width: =Max(App.Width, App.MinScreenWidth)
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Height: =Header.Height
+        Width: =1366
+        X: |
+            =0
+        ZIndex: =1
+
+        Rectangle1 As rectangle:
+            Height: =Header.Height
+            Width: =Header.Width
+            X: =4
+            ZIndex: =1
+
+        Circle1 As circle:
+            Fill: =RGBA(219, 219, 219, 1)
+            Height: =55
+            Width: =60
+            X: =1059
+            Y: =20
+            ZIndex: =2
+
+        Icon3 As icon.Add:
+            FocusedBorderThickness: =5
+            Height: =50
+            Icon: =Icon.Add
+            Width: =60
+            X: =1059
+            Y: =25
+            ZIndex: =3
+
+        Label3 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Text: ="Create Request"
+            X: =1145
+            Y: =24
+            ZIndex: =4
+
+    Label1 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =18
+        Text: ="REQUEST"
+        X: =19
+        Y: =25
+        ZIndex: =2
+
+    Icon1 As icon.ArrowRight:
+        Height: =45
+        Icon: =Icon.ArrowRight
+        Width: =45
+        X: =156
+        Y: =25
+        ZIndex: =3
+
+    Label2 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =18
+        Text: ="LEAVE"
+        X: =201
+        Y: =25
+        ZIndex: =4
+

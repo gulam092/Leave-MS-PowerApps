@@ -1,0 +1,19 @@
+"'My Leave Request' As screen":
+
+    Header_1 As Header:
+
+    Navigation_1 As Navigation:
+        CurrentScreen: ="My Leave Request"
+        Height: =671
+        NameItem: =If(ManagerView=false,NavEmployeeView,NavManagerView)
+        Y: =96
+        ZIndex: =2
+
+    Label5 As label:
+        Height: =38
+        Text: ="My Leave Request"
+        Width: =294
+        X: =429
+        Y: =141
+        ZIndex: =3
+

@@ -1,0 +1,63 @@
+"'Company Holidays' As screen":
+
+    Header_3 As Header:
+
+    "Gallery3 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =334
+        Items: =CompanyHolidays
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =59
+        Width: =1093
+        X: =273
+        Y: =216
+        ZIndex: =1
+
+        Title3 As label:
+            Font: =Font.'Lato Light'
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Holiday
+            VerticalAlign: =VerticalAlign.Top
+            Width: |
+                =Gallery3.TemplateWidth/2
+            X: =32
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Separator3 As rectangle:
+            BorderColor: =RGBA(221, 79, 14, 1)
+            BorderThickness: =2
+            Fill: =RGBA(241, 244, 249, 1)
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+
+        Label17 As label:
+            OnSelect: =Select(Parent)
+            Text: =ThisItem.Date
+            Width: =Gallery3.TemplateWidth/2
+            X: =Gallery3.TemplateWidth/2
+            Y: =19
+            ZIndex: =4
+
+    Navigation_3 As Navigation:
+        CurrentScreen: ="Company Holidays"
+        NameItem: =If(ManagerView=false,NavEmployeeView,NavManagerView)
+        Y: =96
+        ZIndex: =2
+
+    Label15 As label:
+        Height: =82
+        Text: ="Below is a List Of Our Company's Paid holidays during whichour offices will be closed."
+        Width: =744
+        X: =382
+        Y: =134
+        ZIndex: =4
+

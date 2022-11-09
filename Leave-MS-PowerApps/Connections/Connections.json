@@ -1,0 +1,42 @@
+{
+  "bb6ea818-ec9d-42e3-89f7-16ca83d4e2ab": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1607/1.0.1607.3068/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://3bb1fs.sharepoint.com/sites/leave-system": {
+        "dataSources": {
+          "BalanceLeave": {
+            "tableName": "992a1ef7-eda6-4fbf-9259-0f35ba2bd5dc"
+          },
+          "BalanceLeave_1": {
+            "tableName": "992a1ef7-eda6-4fbf-9259-0f35ba2bd5dc"
+          },
+          "BalanceLeave_2": {
+            "tableName": "992a1ef7-eda6-4fbf-9259-0f35ba2bd5dc"
+          },
+          "CompanyHolidays": {
+            "tableName": "03eb3f7a-0a98-43dd-8ad8-482e2ce7676c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "BalanceLeave",
+      "BalanceLeave_1",
+      "CompanyHolidays",
+      "BalanceLeave_2"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bb6ea818-ec9d-42e3-89f7-16ca83d4e2ab"
+  }
+}
